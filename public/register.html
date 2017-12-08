@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/register.css">
+    <title>天天新鲜-注册</title>
+</head>
+<body>
+<!--这是header顶部登录和顶部广告部分-->
+<header>
+    <ul>
+        <li>
+            <a href="#">
+                客户服务
+                <span id="icon3"></span>
+            </a>
+            <ul id="list">
+                <li><a href="#">物流查询</a></li>
+                <li><a href="#">账号管理</a></li>
+                <li><a href="#">充值服务</a></li>
+                <li><a href="#">售后保障</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span id="icon1"></span>
+                手机客户端
+                <span id="icon2"></span>
+            </a>
+            <img id="code" src="img/App_QR_Code.png">
+        </li>
+        <li><a href="#">账户充值</a></li>
+        <li><a href="#">用户中心</a></li>
+        <li>您好！请&nbsp;<a href="#">[登录]</a>&nbsp;&nbsp;<a href="#">[注册]</a></li>
+    </ul>
+</header>
+<section>
+    <p><img src="img/20120602140056.jpg"></p>
+    <div id="master"></div>
+    <form id="register">
+            <input type="text" name="uname" placeholder=" 用户名 (请输入3~6位，只能包含字母和数字)" id="uname" required maxlength="6"><span></span><br>
+            <input type="text" name="upwd" placeholder=" 密码 (请输入6~12位数字)" id="upwd" required maxlength="12"><span></span><br>
+            <input type="text" name="uphone" placeholder=" 手机号" id="uphone" required maxlength="11"><span></span><br>
+            <input type="email" name="umail" placeholder=" 邮箱" id="umail" required><span></span><br>
+            <input id="bt-register" type="button" value="立即注册">
+     </form>
+</section>
+<!--这是底部FOOTER购物指南和服务部分-->
+<footer>
+    <div id="part3">
+        <p><img src="img/tel.gif"> 客服热线：400-8888-666（第一时间获得我们的VIP服务！）</p>
+        <p>ICP备案证书号：鄂ICP备16088606号</p>
+        <p>2016-2017 天天新鲜 版权所有，并保留所有权利</p>
+        <p><img src="img/kxwz.png"> </p>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/register.js" type="text/babel"></script>
+</body>
+</html>

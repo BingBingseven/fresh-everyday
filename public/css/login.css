@@ -1,0 +1,215 @@
+/*-------------------------------------����ҳ���ʼ����ʽ-----------------------------------------*/
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+    margin:0;
+    padding:0;
+	font-size:12px;
+}
+fieldset,img,input,button{
+    border:0;
+    padding:0;
+    margin:0;
+    outline-style: none;
+}
+ul,ol{
+    list-style:none;
+}
+input{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family:"Simsun","����";
+}
+select,input,textarea{
+    font-size: 12px;
+    margin:0;
+}
+textarea{resize: none;}
+img{
+    border:0;
+    vertical-align: middle;
+}
+table{
+    border-collapse: collapse;
+}
+body{
+    font:1em/150%Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background: #fff;
+    width: 1920px;
+    margin: 0 auto;
+}
+a{
+    color:#666;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(138,183,0);
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+s,i,em{
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*-----------------------------����header������¼�Ͷ�����沿�ֲ���-------------------------------------*/
+header img{
+    width: 100%;
+}
+header>ul{
+    height:28px;
+    width:65%;
+    margin: 0 auto;
+}
+header>ul>li{
+    height:28px;
+    line-height: 28px;
+}
+header>ul>li:last-child{
+    margin-left: 2%;
+}
+
+header>ul>li:not(:last-child){
+    float:right;
+    margin-right:1%;
+}
+header>ul>li:nth-child(3){
+    margin-right:2% ;
+}
+header #icon1{
+    background: url("../img/icon.sprites.png") -10px -10px;
+    width:15px;
+    height:28px;
+    margin-top: 3px;
+    float: left;
+    margin-right: -20px;
+}
+header #icon2,
+header #icon3{
+    background: url("../img/icon.sprites.png") -28px -10px;
+    width:12px;
+    height:5px;
+    margin-top:12px;
+    float:right;
+}
+header>ul>li:nth-child(2):hover #icon2,
+header>ul>li:first-child:hover #icon3{
+    background: url("../img/icon.sprites.png") -38px -10px;
+}
+header>ul>li:not(:last-child)>a{
+    border-left: 1px solid #ddd;
+    padding-left:20px;
+}
+header>ul>li:nth-child(2)>a{
+    border-left: none;
+}
+header>ul>li:nth-child(2),
+header>ul>li:first-child{
+    position: relative;
+}
+#code,#list{
+    position: absolute;
+    width: 100%;
+    top:28px;
+    left:0;
+    display: none;
+    z-index: 1000;
+}
+#list{
+    padding-left: 20px;
+    background: #fcfcfc;
+    border:1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+header>ul>li:nth-child(2):hover #code{
+    display: block;
+}
+header>ul>li:first-child:hover #list{
+    display: block;
+}
+section{
+    width: 65%;
+    margin: 0 auto;
+    height:653px;
+    margin-top: 50px;
+}
+section>p{
+    float: left;
+    width: 50%;
+}
+section>p>img{
+    width: 100%;
+}
+section>#login{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 40px;
+    height:500px;
+    text-align: center;
+}
+section>#login>p:first-child{
+    margin-top:20px;
+    margin-right:60%;
+    letter-spacing: 2px;
+	font-size:1.4em;
+}
+
+section>#login>a{
+    display: inline-block;
+    margin-top: 50px;
+    background: #fff;
+    height: 35px;
+    line-height: 35px;
+    border:1px solid #ddd;
+    border-radius: 5px;
+    width: 20%;
+    letter-spacing: 2px;
+}
+section>#login>a>img{
+    width: 25px;
+}
+section #uname,#upwd{
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    width: 80%;
+    height:40px;
+    line-height: 40px;
+    display: block;
+    margin: 30px auto;
+}
+section a{
+    color: #78A000;
+    font-size: 0.9em;
+}
+section>#login>form>button{
+    background: #ff6900;
+    width: 80%;
+    height:40px;
+    line-height: 40px;
+    margin: 30px auto;
+    display: block;
+    color: #fff;
+    font-size: 1.4em;
+    letter-spacing: 3px;
+}
+
+/*-----------------------------------------------这是底部部分-----------------------------------------*/
+footer>#part3{
+    text-align: center;
+    margin-top:  100px;
+    margin-bottom:  30px;
+}
+footer>#part3>p{
+    margin-bottom: 10px;
+}
+footer>#part3>p:first-child{
+    font-weight: bold;
+}

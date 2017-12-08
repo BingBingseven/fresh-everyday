@@ -1,0 +1,293 @@
+/*-------------------------------------??????????????-----------------------------------------*/
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+    margin:0;
+    padding:0;
+	font-size:12px;
+}
+fieldset,img,input,button{
+    border:0;
+    padding:0;
+    margin:0;
+    outline-style: none;
+}
+ul,ol{
+    list-style:none;
+}
+input{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family:"Simsun","????";
+}
+select,input,textarea{
+    font-size: 12px;
+    margin:0;
+}
+textarea{resize: none;}
+img{
+    border:0;
+    vertical-align: middle;
+}
+table{
+    border-collapse: collapse;
+}
+body{
+    font:1em/150%Arial,Verdana,"\5b8b\4f53";
+    color:#666;
+    background: #fff;
+    width: 1920px;
+    margin: 0 auto;
+}
+a{
+    color:#666;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(138,183,0);
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+s,i,em{
+    font-style: normal;
+    text-decoration: none;
+}
+
+/*-----------------------------????header??????????????��?????-------------------------------------*/
+header{
+    width: 100%;
+    background: #fcfcfc;
+    border-bottom: 1px solid #ddd;
+}
+header>ul{
+    height:28px;
+    width:65%;
+    margin: 0 auto;
+}
+header>ul>li{
+    height:28px;
+    line-height: 28px;
+}
+header>ul>li:last-child{
+    margin-left: 2%;
+}
+
+header>ul>li:not(:last-child){
+    float:right;
+    margin-right:1%;
+}
+header>ul>li:nth-child(3){
+    margin-right:2% ;
+}
+header #icon1{
+    background: url("../img/icon.sprites.png") -10px -10px;
+    width:15px;
+    height:28px;
+    margin-top: 3px;
+    float: left;
+    margin-right: -20px;
+}
+header #icon2,
+header #icon3{
+    background: url("../img/icon.sprites.png") -28px -10px;
+    width:12px;
+    height:5px;
+    margin-top:12px;
+    float:right;
+}
+header>ul>li:nth-child(2):hover #icon2,
+header>ul>li:first-child:hover #icon3{
+    background: url("../img/icon.sprites.png") -38px -10px;
+}
+header>ul>li:not(:last-child)>a{
+    border-left: 1px solid #ddd;
+    padding-left:20px;
+}
+header>ul>li:nth-child(2)>a{
+    border-left: none;
+}
+header>ul>li:nth-child(2),
+header>ul>li:first-child{
+    position: relative;
+}
+#code,#list{
+    position: absolute;
+    width: 100%;
+    top:28px;
+    left:0;
+    display: none;
+    z-index: 1000;
+}
+#list{
+    padding-left: 20px;
+    background: #fcfcfc;
+    border:1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+}
+header>ul>li:nth-child(2):hover #code{
+    display: block;
+}
+header>ul>li:first-child:hover #list {
+    display: block;
+}
+
+/*这是logo部分*/
+#logo{
+    width: 60%;
+    margin: 40px auto 20px;
+    height:86px;
+}
+#logo>div,#logo>img{
+    float: left;
+    margin-right: 1%;
+}
+#logo a{
+    color: #f08f0c;
+}
+#logo>img:first-child{
+    margin-right: 15%;
+    margin-top: -20px;
+}
+#cart{
+    width: 65%;
+    margin: 0 auto;
+}
+/*-------------------------------这是页面主体部分---------------------------------------------*/
+section{
+    width: 65%;
+    margin:10px auto 30px;
+	font-size:1.2em;
+}
+section>table{
+    width: 100%;
+    text-align: center;
+}
+section>table button{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #777;
+    font-size: 1.2em;
+    text-align: center;
+}
+section thead{
+    background: #fafbf8;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    height: 40px;
+    line-height: 40px;
+}
+section tbody>tr{
+    border-bottom:  1px solid #ddd;
+    vertical-align: middle;
+}
+section tbody span{
+    width: 30px;
+    display: inline-block;
+}
+section tbody td.sum{
+    width: 100px;
+}
+section>table b{
+    font-size: 1.4em;
+    color:#eb6100;
+}
+section>div b{
+    font-size: 1.3em;
+    color: #eb6100;
+}
+section tfoot>tr>td{
+    height: 60px;
+    vertical-align: middle;
+}
+section tfoot>tr>td:nth-child(2){
+    column-span: 4;
+    text-align:left;
+}
+section>div{
+    text-align: right;
+}
+section>div>button{
+    width: 10%;
+    height:40px;
+    background: linear-gradient(to top,#f0ae0c,#f08c0c);
+    border:1px solid transparent;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+}
+    /*-----------------------------------------------���ǵײ�����-----------------------------------------*/
+footer>#part1{
+    text-align: center;
+    margin-top: 30px;
+}
+footer>#part1>ul{
+    background: #f8f8f6;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+footer>#part1>ul>li{
+    display: inline-block;
+    margin: 0 50px;
+}
+footer>#part1>ul>li>div{
+    display: inline-block;
+    vertical-align: middle;
+}
+footer>#part1>ul>li>div:first-child{
+    border-right: 1px solid rgb(138,183,0);
+}
+footer>#part1>ul>li>div:last-child{
+    text-align: left;
+    font-size: 0.9em;
+    margin-left: 10px;
+}
+footer>#part1>ul>li>div:last-child>p:first-child{
+    color: rgb(138,183,0);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+footer>#part2{
+    text-align: center;
+    margin-top: 30px;
+}
+footer>#part2>ul{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+footer>#part2>ul>li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 100px;
+}
+footer>#part2>ul>li>ul>li{
+    font-size: 1.2em;
+    text-align: left;
+    border-left: 1px dashed #ddd;
+    padding-left: 17px;
+}
+footer>#part2>ul>li>ul>li:first-child{
+    margin-left: -35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-left: none;
+}
+footer>#part3{
+    text-align: center;
+    margin-top:  30px;
+    margin-bottom:  30px;
+}
+footer>#part3>p{
+    margin-bottom: 10px;
+}
+footer>#part3>p:first-child{
+    font-weight: bold;
+}
+

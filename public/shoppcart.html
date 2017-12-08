@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>天天新鲜—我的购物车</title>
+    <link rel="stylesheet" href="css/shoppingcart.css">
+    <!--[if lt IE6]>
+    <script>
+        (function() {
+            if (!
+                        /*@cc_on!@*/
+                            0) return;
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i= e.length;
+            while (i--){
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+    <![endif]-->
+</head>
+<body>
+<!--这是header顶部登录和顶部广告部分-->
+<header>
+    <ul>
+        <li>
+            <a href="#">
+                客户服务
+                <span id="icon3"></span>
+            </a>
+            <ul id="list">
+                <li><a href="#">物流查询</a></li>
+                <li><a href="#">账号管理</a></li>
+                <li><a href="#">充值服务</a></li>
+                <li><a href="#">售后保障</a></li>
+                <li><a href="#">联系客服</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">
+                <span id="icon1"></span>
+                手机客户端
+                <span id="icon2"></span>
+            </a>
+            <img id="code" src="img/App_QR_Code.png">
+        </li>
+        <li><a href="#">账户充值</a></li>
+        <li><a href="#">用户中心</a></li>
+        <li>您好！请&nbsp;<a href="#">[登录]</a>&nbsp;&nbsp;<a href="#">[注册]</a></li>
+    </ul>
+</header>
+<!--这是logo部分-->
+<div id="logo">
+        <img src="img/logo.png" alt="logo">
+        <img src="img/c1.jpg">
+        <div>
+        <p>第一步</p>
+        <p><a href="#"> 我的购物车</a></p>
+    </div>
+        <img src="img/c2.jpg">
+        <img src="img/c3.jpg">
+        <div>
+        <p>第二步</p>
+        <p>填写核对订单</p>
+    </div>
+        <img src="img/c4.jpg">
+        <img src="img/c5.jpg">
+        <div>
+        <p>第三步</p>
+        <p>提交成功</p>
+    </div>
+</div>
+<p id="cart"><a href="#">首页&gt;我的购物车</a> </p>
+<!--这是购物车主体部分-->
+<section>
+    <table>
+        <thead>
+            <tr>
+                <td><input type="checkbox">&nbsp;全选</td>
+                <td>商品</td>
+                <td>单价</td>
+                <td>购买数量</td>
+                <td>小计</td>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/hot_11.jpg"> </td>
+                <td>11.70</td>
+                <td><button class="sub">-</button>&nbsp;&nbsp;<span>7</span>&nbsp;&nbsp;<button class="plus">+</button></td>
+                <td class="sum">&yen;81.9</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/hot_01.jpg"> </td>
+                <td>11.70</td>
+                <td><button class="sub">-</button>&nbsp;&nbsp;<span>1</span>&nbsp;&nbsp;<button class="plus">+</button></td>
+                <td class="sum">&yen;11.70</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/drink/d9.jpg"> </td>
+                <td>170.00</td>
+                <td><button class="sub">-</button>&nbsp;&nbsp;<span>1</span>&nbsp;&nbsp;<button class="plus">+</button></td>
+                <td class="sum">&yen;170.00</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="img/hot_12.jpg"> </td>
+                <td>9.00</td>
+                <td><button class="sub">-</button>&nbsp;&nbsp;<span>3</span>&nbsp;&nbsp;<button class="plus">+</button></td>
+                <td class="sum">&yen;27.00</td>
+                <td><a href="#">删除</a></td>
+            </tr>
+        </tbody>
+       <tfoot>
+            <tr>
+                <td><input type="checkbox">&nbsp;全选</td>
+                <td><a href="#"><img src="img/del_03.jpg" ></a> </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>总计：<b id="tPrice"></b></td>
+            </tr>
+       </tfoot>
+    </table>
+    <div>
+        <span>
+            已选择<b>0</b>件商品，共计<b>0.00</b>元
+        </span>
+        <button>去结算</button>
+    </div>
+</section>
+<!--这是底部FOOTER购物指南和服务部分-->
+<footer>
+    <div id="part1">
+        <ul>
+            <li>
+                <div><a href="#"><img src="img/icon_03.jpg"> </a></div>
+                <div>
+                    <p>8小时低温</p>
+                    <p>全程冷链配送</p>
+                </div>
+            </li>
+            <li>
+                <div><a href="#"><img src="img/icon_05.jpg"> </a></div>
+                <div>
+                    <p>0时差基地直供</p>
+                    <p>农场到餐桌</p>
+                </div>
+            </li>
+            <li>
+                <div><a href="#"><img src="img/icon_07.jpg"> </a></div>
+                <div>
+                    <p>43项检测</p>
+                    <p>安全无农残</p>
+                </div>
+            </li>
+            <li>
+                <div><a href="#"><img src="img/icon_09.jpg"> </a></div>
+                <div>
+                    <p>7*24小时营业</p>
+                    <p>全年无休</p>
+                </div>
+            </li>
+            <li>
+                <div><a href="#"><img src="img/icon_11.jpg"> </a></div>
+                <div>
+                    <p>配送直达</p>
+                    <p>方便快捷</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="part2">
+        <ul>
+            <li>
+                <ul>
+                    <li><img src="img/icon_02.jpg">新手指南</li>
+                    <li><a href="#"> 购物流程</a></li>
+                    <li><a href="#">联系客服</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><img src="img/icon_04.jpg">配送方式</li>
+                    <li><a href="#">配送说明</a></li>
+                    <li><a href="#">配送站点</a></li>
+                    <li><a href="#">配送时间</a></li>
+                    <li><a href="#">配送方式</a></li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li><img src="img/icon_06.jpg">订单服务</li>
+                    <li><a href="#">订单退款</a></li>
+                    <li><a href="#">退换货服务</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="part3">
+        <p><img src="img/tel.gif"> 客服热线：400-8888-666（第一时间获得我们的VIP服务！）</p>
+        <p>ICP备案证书号：鄂ICP备16088606号</p>
+        <p>2016-2017 天天新鲜 版权所有，并保留所有权利</p>
+        <p><img src="img/kxwz.png"> </p>
+    </div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/shoppingcart.js"></script>
+</body>
